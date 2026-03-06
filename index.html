@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry Lite</title>
+    <style>
+        /* Remove default margins and padding to ensure the iframe fills the viewport */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            background-color: #000;
+        }
+
+        /* Styling the iframe to be fully responsive and centered */
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 
+        Standard iframe implementation. 
+        Note: If the source site has "X-Frame-Options: SAMEORIGIN" or a strict CSP, 
+        the browser will block the content from loading. 
+    -->
+    <iframe 
+        src="https://geometrylitepc.io/" 
+        width="800" 
+        height="600" 
+        frameborder="0" 
+        allowfullscreen>
+    </iframe>
+
+</body>
+</html>
